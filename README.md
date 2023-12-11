@@ -35,7 +35,7 @@ Make sure you have Node.js and npm installed on your machine.
    ```bash
    npm start
 
-6. This will launch the server, and you can view the project by navigating to (http://localhost:8080/) in your web browser.
+This will launch the server, and you can view the project by navigating to (http://localhost:8080/) in your web browser.
 
 ### Built With
 D3.js - Data-Driven Documents
