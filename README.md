@@ -25,12 +25,12 @@ Make sure you have Node.js and npm installed on your machine.
    ```bash
    cd Weather Forecast Viz
 
-### Install dependencies
+3. Install dependencies
 
 ```bash
 npm install
 
-### Run the server
+4. Run the server
 
 ```bash
 npm start
