@@ -23,14 +23,16 @@ Make sure you have Node.js and npm installed on your machine.
 ### Navigate to the project directory
 
 ```bash
-cd Weather Forecast Data
+cd Weather Forecast Viz
 
 ### Install dependencies
 
+```bash
 npm install
 
 ### Run the server
 
+```bash
 npm start
 
 This will launch the server, and you can view the project by navigating to [http://localhost:3000](http://localhost:8080/) in your web browser.
