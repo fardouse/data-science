@@ -27,7 +27,6 @@ cd Weather Forecast Data
 
 ### Install dependencies
 
-```bash
 npm install
 
 ### Run the server
