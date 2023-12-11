@@ -32,9 +32,8 @@ Make sure you have Node.js and npm installed on your machine.
 npm install
 
 4. Run the server
-
-```bash
-npm start
+``` 
+   npm start
 
 This will launch the server, and you can view the project by navigating to [http://localhost:3000](http://localhost:8080/) in your web browser.
 
