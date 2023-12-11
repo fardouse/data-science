@@ -21,7 +21,8 @@ Make sure you have Node.js and npm installed on your machine.
    git clone https://github.com/fardouse/data-science.git
 
 2. Navigate to the project directory
-
+   
+   ```bash
    cd Weather Forecast Viz
 
 ### Install dependencies
