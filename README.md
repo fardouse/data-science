@@ -22,6 +22,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 ### Navigate to the project directory
 
+```bash
 cd Weather Forecast Data
 
 ### Install dependencies
