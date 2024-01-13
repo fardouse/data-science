@@ -1,4 +1,4 @@
-# Weather Data Viz
+# Interactive Weather Data Viz
 
 This project visualizes the average temperature of various cities between 2014-15.
 The x-axis represents the month, and the y-axis denotes the temperature. Each data 
