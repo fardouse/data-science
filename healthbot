@@ -2,7 +2,7 @@ import pandas as pd
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
-df = pd.read_csv("/Users/dosa/portfolio/data-science/chatbot/test_data.csv")
+df = pd.read_csv("data-science/healthbot/test_data.csv")
 
 chatbot = ChatBot("HealthBot")
 
