@@ -1,0 +1,44 @@
+import pandas as pd
+from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+
+df = pd.read_csv("/Users/dosa/portfolio/data-science/chatbot/test_data.csv")
+
+chatbot = ChatBot("HealthBot")
+
+trainer = ListTrainer(chatbot)
+trainer.train([
+    "What is your age?",
+    "What is your gender?"
+])
+trainer.train([
+    "Female",
+    "What are you symptoms are you facing?",
+])
+trainer.train([
+    "Hello",
+    "Hi, how may I assist you?",
+    "What are you symptoms are you facing?"
+])
+
+for index, row in df.iterrows():
+    symptoms = [col for col in df.columns[:-1] if row[col] == 1]
+    symptoms_text = ', '.join(symptoms)
+    trainer.train([f"Possible diagnosis: {row['prognosis']}", f"Symptoms: {symptoms_text}"])
+
+print(f"🩺 {'Welcome to HealthBot!'}")
+print(f"🩺 {'Take a short symptom assessment and find out what could be causing them.'}")
+print(f"🩺 {'Type quit to exit.'}")
+
+print(f"🩺 {'To begin with, what is your age?'}")
+
+
+while True:
+    query = input("> ")
+    if query.lower() in ["q", "quit", "exit"]:
+        print("Thank you for using HealthBot. Have a great day!")
+        break
+    else:
+        response = chatbot.get_response(query)
+        print(f"🩺 {response}")
+
